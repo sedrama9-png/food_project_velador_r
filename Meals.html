@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<h1>Velador Restaurant</h1>
+<h2>الوجبات</h2>
+
+<table border="1" width="90%" align="center">
+    <tr>
+        <th>اختيار</th>
+        <th>الرمز</th>
+        <th>الوجبة</th>
+        <th>السعر</th>
+        <th>إظهار التفاصيل</th>
+    </tr>
+
+    <!-- 1 -->
+    <tr>
+        <td><input type="checkbox" class="meal" data-name="سمك بوري" data-price="110000"></td>
+        <td>SF-001</td>
+        <td>وجبة سمك بوري مشوي</td>
+        <td>110000 ل.س</td>
+        <td><button class="toggle" data-id="d1">إظهار التفاصيل</button></td>
+    </tr>
+
+    <tr id="d1" style="display:none">
+        <td colspan="5">
+            <b>المطبخ:</b> مصري <br>
+            <b>التصنيف:</b> مأكولات بحرية <br>
+            <b>المكونات:</b> سمك بوري، ثوم، ليمون، زيت زيتون، طماطم
+        </td>
+    </tr>
+
+    <!-- 2 -->
+    <tr>
+        <td><input type="checkbox" class="meal" data-name="دجاج مشوي" data-price="85000"></td>
+        <td>SF-002</td>
+        <td>وجبة دجاج مشوي</td>
+        <td>85000 ل.س</td>
+        <td><button class="toggle" data-id="d2">إظهار التفاصيل</button></td>
+    </tr>
+
+    <tr id="d2" style="display:none">
+        <td colspan="5">
+            <b>المطبخ:</b> شرقي <br>
+            <b>التصنيف:</b> دجاج <br>
+            <b>المكونات:</b> دجاج، بهارات، ليمون، ثوم
+        </td>
+    </tr>
+
+    <!-- 3 -->
+    <tr>
+        <td><input type="checkbox" class="meal" data-name="برغر" data-price="60000"></td>
+        <td>SF-003</td>
+        <td>برغر لحم</td>
+        <td>60000 ل.س</td>
+        <td><button class="toggle" data-id="d3">إظهار التفاصيل</button></td>
+    </tr>
+
+    <tr id="d3" style="display:none">
+        <td colspan="5">
+            <b>المطبخ:</b> أمريكي <br>
+            <b>التصنيف:</b> ساندويشات <br>
+            <b>المكونات:</b> لحم، خبز، خس، جبنة
+        </td>
+    </tr>
+
+    <tr>
+        <td> <input type="checkbox" class="meal" data-name="غوردون بلو" data-price="90000"></td>
+        <td>SF-004</td>
+        <td>وجبة غوردون بلو</td>
+        <td>90000ل.س</td>
+        <td><button class="toggle" data-id="d4">إظهار التفاصيل</button></td>
+    
+    </tr> 
+
+    <tr id="d4" style="display:none">
+        <td colspan="5">
+            <b>المطبخ:</b>فرنسي<br>
+            <b>التصنيف</b>وجبات<br>
+            <b>المكونات:</b>جاج مقلي ,جبنة قشقوان وموزريلا,,حبش ,بشاميل<br>
+
+        </td>
+
+    </tr>
+    <tr>
+        <td> <input type="checkbox" class="meal" data-name=" سلطة سيزر" data-price="40000"></td>
+        <td>SF-005</td>
+        <td>سلطة سيزر</td>
+        <td>40000ل.س</td>
+        <td><button class="toggle" data-id="d5">إظهار التفاصيل</button></td>
+    
+    </tr> 
+    <tr id="d5" style="display: none;">
+        <td colspan="5">
+             <b>المطبخ:</b>عالمي<br>
+              <b>التصنيف:</b> سلطات<br>
+            <b>المكونات:</b>خس,خبز توست ,جاج, جبنة,صوص سيزر
+
+        </td>
+         </tr>
+    
+
+    
+
+</table>
+
+<br><br>
+
+<h2>بيانات الزبون</h2>
+
+<form id="orderForm">
+
+    الاسم الكامل:<br>
+    <input type="text" id="name"><br><br>
+
+    الرقم الوطني:<br>
+    <input type="text" id="nid"><br><br>
+
+    تاريخ الولادة:<br>
+    <input type="text" id="dob" placeholder="dd-mm-yyyy"><br><br>
+
+    رقم الموبايل:<br>
+    <input type="text" id="mobile"><br><br>
+
+    الإيميل:<br>
+    <input type="text" id="email"><br><br>
+
+    <button type="submit">إرسال</button>
+
+</form>
+
+<hr>
+
+<nav>
+    <a href="home.html">الرئيسية</a>
+    <a href="AboutUs.html">من نحن</a>
+    <a href="Meals.html">الوجبات</a>
+</nav>
+
+<script src="myFunctions.js"></script>
+
+</body>
+</html>

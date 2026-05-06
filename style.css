@@ -1,0 +1,43 @@
+ body{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cornsilk;
+    text-align: center;
+    
+ }
+ h1{
+    color:seagreen;
+ }
+ h2{
+    color: darkseagreen;
+ }
+p{
+    font-size: 18px;
+}
+ul{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    margin: 12px;
+    color: midnightblue;
+    font-weight: bold;
+}
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+}
+
+.details {
+    display: none;
+}
+
+input {
+    padding: 6px;
+    width: 250px;
+}
